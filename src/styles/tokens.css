@@ -1,0 +1,62 @@
+/**
+ * Design tokens — mirrors design-system.md exactly.
+ * Dark is the primary theme; Light is a fully redesigned counterpart,
+ * not a simple inversion (per the Theme System section).
+ */
+:root {
+  --radius-card: 24px;
+  --radius-btn: 999px;
+  --radius-input: 16px;
+  --radius-dialog: 28px;
+  --radius-sm: 12px;
+
+  --dur: 250ms;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --font-head: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* Brand — same across both themes */
+  --primary: #c51e1e;
+  --primary-hover: #d62828;
+  --secondary: #7a1111;
+  --accent: #ff4040;
+  --success: #2ec27e;
+  --warning: #f5a524;
+  --error: #e5484d;
+}
+
+html[data-theme='dark'] {
+  --bg: #090909;
+  --surface: #161616;
+  --surface-2: #1d1d1d;
+  --surface-hover: #202020;
+  --border: rgba(255, 255, 255, 0.08);
+  --divider: rgba(255, 255, 255, 0.06);
+  --text-primary: #f5f5f5;
+  --text-secondary: #b6b6b6;
+  --text-muted: #757575;
+  --glass-bg: rgba(22, 22, 22, 0.62);
+  --glass-border: rgba(255, 255, 255, 0.09);
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 40px rgba(197, 30, 30, 0.25);
+  --scrim: rgba(0, 0, 0, 0.6);
+}
+
+html[data-theme='light'] {
+  --bg: #f6f4f4;
+  --surface: #ffffff;
+  --surface-2: #f0eded;
+  --surface-hover: #e9e5e5;
+  --border: rgba(20, 10, 10, 0.09);
+  --divider: rgba(20, 10, 10, 0.07);
+  --text-primary: #1b1414;
+  --text-secondary: #5b5252;
+  --text-muted: #8b8383;
+  --glass-bg: rgba(255, 255, 255, 0.66);
+  --glass-border: rgba(20, 10, 10, 0.08);
+  --shadow-card: 0 8px 30px rgba(60, 20, 20, 0.1);
+  --shadow-glow: 0 0 40px rgba(197, 30, 30, 0.14);
+  --scrim: rgba(20, 10, 10, 0.35);
+}
